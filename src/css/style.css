@@ -1,0 +1,136 @@
+body {
+  background-image: url(../imagens/fundo-site.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  font-family: sans-serif;
+  color: #f3f3f3;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1.875rem;
+}
+
+.card {
+  background-color: #5d5a5a;
+  width: 400px;
+  border: 2px solid #24d;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Parte Superior */
+.card .mainInfo {
+  padding-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.card .mainInfo img {
+  border-radius: 50%;
+  border: 4px solid #02d08f;
+}
+
+.card .mainInfo .nameMain {
+  font-size: 1.625rem;
+}
+
+.card .mainInfo .statusMain {
+  font-size: 1.25rem;
+  opacity: 0.7;
+}
+
+/* Part Inferior */
+.card .contentMain {
+  margin-top: 0.9375rem;
+}
+
+.contentMain .navIcons {
+  display: flex;
+}
+
+.contentMain .navIcons .icon {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 0.625rem 0;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.contentMain .navIcons .icon img {
+  width: 1.875rem;
+}
+
+/* Aba selecionada */
+.contentMain .navIcons .icon.select {
+  background-color: #262626;
+}
+
+.contentMain .info {
+  background-color: #262626;
+  min-height: 15rem;
+  padding: 0.9375rem;
+  display: none;
+}
+
+.contentMain .info.select {
+  display: block;
+}
+
+.contentMain .navIcons .icon:is(:hover, :focus) {
+  background-color: #414141;
+  cursor: pointer;
+}
+
+.contentMain .info .subTitle {
+  font-size: 1.375rem;
+  margin-bottom: 1.5625rem;
+  text-align: center;
+}
+
+.contentMain .info .aboutMeText {
+  font-size: 1.25rem;
+  max-height: 11.25rem;
+  overflow-y: auto;
+  padding-right: 0.9375rem;
+}
+
+.contentMain .info .socialMedia {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5625rem;
+}
+
+.contentMain .info .socialMedia li a {
+  width: 15.625rem;
+  display: block;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 0.625rem;
+  font-size: 1.25rem;
+  transition: opacity 0.2s ease-in-out;
+  overflow-y: auto;
+}
+
+.socialMedia li:is(:hover, :focus) {
+  opacity: 0.8;
+}
+
+.socialMedia .linkedIn {
+  background-color: #24d;
+}
+
+.socialMedia .gitHub {
+  background-color: #5b3535;
+}
+
+.socialMedia .linkTree {
+  background-color: #02d08f;
+}
